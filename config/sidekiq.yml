@@ -1,0 +1,9 @@
+:queues:
+  - default
+
+:scheduler:
+  :schedule:
+    send_emails:
+      cron: "0 9 * * *" # Every day at 9 AM
+      class: "SendEmailJob"
+      args: []
